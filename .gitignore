@@ -1,0 +1,13 @@
+.idea
+.vscode
+.build
+.cache
+.coverage
+.pytest_cache
+.eggs
+build
+/dist
+venv
+*.egg-info
+*.pyc
+.ipynb_checkpoints
