@@ -2,11 +2,11 @@
 
 This is on-going research on how to run scripts as notebooks using Jupytext and Papermill. 
 
-Open and run this document on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mwouts/papermill_jupytext/master?filepath=README.md)
-
 The corresponding GitHub issues are
 - https://github.com/mwouts/jupytext/issues/231
 - https://github.com/nteract/papermill/issues/365
+
+Open and run this document on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mwouts/papermill_jupytext/master?filepath=README.md)
 
 ```bash
 cd demo
@@ -24,11 +24,11 @@ jupytext script.py -o notebook.ipynb --update-metadata '{"kernelspec":{"name":"p
 papermill notebook.ipynb executed_notebook.ipynb -p integer 2 -p text 'updated text'
 ```
 
-```python
-import nbformat
+```bash
+python -c "import nbformat
 with open('executed_notebook.ipynb') as fp:
-    nb = nbformat.read(fp)
-nb.cells[-1]['output']
+    nb = nbformat.read(fp, as_version=4)
+print(nb.cells[-1]['outputs'][0]['text'])"
 ```
 
 ## Inject parameters in a script using Papermill
@@ -64,9 +64,9 @@ jupytext script.py -o script_with_kernel_info.py --update-metadata '{"kernelspec
 papermill txt://script_with_kernel_info.py executed_notebook.ipynb  -p integer 4 -p text 'updated text, v4'
 ```
 
-```python
-import nbformat
+```bash
+python -c "import nbformat
 with open('executed_notebook.ipynb') as fp:
-    nb = nbformat.read(fp)
-nb.cells[-1]['output']
+    nb = nbformat.read(fp, as_version=4)
+print(nb.cells[-1]['outputs'][0]['text'])"
 ```
