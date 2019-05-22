@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -ex
+
+# Install the bash kernel
+python -m bash_kernel.install
+
+# Install papermill_jupytext in dev mode
+pip install -e .

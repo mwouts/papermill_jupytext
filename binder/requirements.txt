@@ -1,0 +1,3 @@
+jupytext
+papermill
+bash_kernel

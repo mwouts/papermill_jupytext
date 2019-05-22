@@ -1,5 +1,5 @@
 import jupytext
-
+import nbformat
 
 class TextFileHandler:
 
@@ -8,14 +8,18 @@ class TextFileHandler:
         """
         Read a notebook using Jupytext
         """
-        return jupytext.readf(path)
+        assert path.startswith('txt://')
+        nb = jupytext.readf(path[6:])
+        return nbformat.writes(nb, version=4)
 
     @classmethod
     def write(cls, file_content, path):
         """
         Write a notebook using Jupytext
         """
-        jupytext.writef(file_content, path)
+        assert path.startswith('txt://')
+        nb = nbformat.reads(file_content, as_version=4)
+        jupytext.writef(nb, path[6:])
 
     @classmethod
     def pretty_path(cls, path):
