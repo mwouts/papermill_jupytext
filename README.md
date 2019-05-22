@@ -6,7 +6,7 @@ The corresponding GitHub issues are
 - https://github.com/mwouts/jupytext/issues/231
 - https://github.com/nteract/papermill/issues/365
 
-Open and run this document on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mwouts/papermill_jupytext/master?filepath=README.md)
+Open this document and run it as a notebook on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mwouts/papermill_jupytext/master?filepath=README.md)
 
 ```bash
 cd demo
