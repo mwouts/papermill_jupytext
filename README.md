@@ -1,10 +1,15 @@
 # Parametrize and run scripts as notebooks with jupytext and papermill
 
+[![Build Status](https://travis-ci.com/mwouts/papermill_jupytext.svg?branch=master)](https://travis-ci.com/mwouts/papermill_jupytext)
+[![codecov.io](https://codecov.io/github/mwouts/papermill_jupytext/coverage.svg?branch=master)](https://codecov.io/github/mwouts/papermill_jupytext?branch=master)
+[![Language grade: Python](https://img.shields.io/badge/lgtm-A+-brightgreen.svg)](https://lgtm.com/projects/g/mwouts/papermill_jupytext/context:python)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mwouts/papermill_jupytext/master?filepath=README.md)
+
 This is on-going research on how to run scripts as notebooks using Jupytext and Papermill. 
 
 The corresponding GitHub issues are [Jupytext #231](https://github.com/mwouts/jupytext/issues/231) and [Papermill #365](https://github.com/nteract/papermill/issues/365).
 
-Open this document and run it as a notebook on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mwouts/papermill_jupytext/master?filepath=README.md)
+Note that the below is a Bash Jupyter notebook that is [tested on our CI](https://github.com/mwouts/papermill_jupytext/blob/10dd863304614dd0c6328c859a077b52ba3c9822/.travis.yml#L29). If you wish, you can also open and run it interactively on [Binder](https://mybinder.org/v2/gh/mwouts/papermill_jupytext/master?filepath=README.md).
 
 ```bash
 cd demo
