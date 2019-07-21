@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.com/mwouts/papermill_jupytext.svg?branch=master)](https://travis-ci.com/mwouts/papermill_jupytext)
 [![codecov.io](https://codecov.io/github/mwouts/papermill_jupytext/coverage.svg?branch=master)](https://codecov.io/github/mwouts/papermill_jupytext?branch=master)
 [![Language grade: Python](https://img.shields.io/badge/lgtm-A+-brightgreen.svg)](https://lgtm.com/projects/g/mwouts/papermill_jupytext/context:python)
+[![Pypi](https://img.shields.io/pypi/v/papermill_jupytext.svg)](https://pypi.python.org/pypi/papermill_jupytext)
+[![pyversions](https://img.shields.io/pypi/pyversions/papermill_jupytext.svg)](https://pypi.python.org/pypi/papermill_jupytext)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mwouts/papermill_jupytext/master?filepath=README.md)
 
 This is on-going research on how to run scripts as notebooks using Jupytext and Papermill. 
