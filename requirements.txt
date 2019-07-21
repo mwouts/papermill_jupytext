@@ -1,2 +1,2 @@
 papermill
-jupytext
+jupytext>=1.2
