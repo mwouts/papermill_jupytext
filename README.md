@@ -59,14 +59,10 @@ python script_with_parameters.py
 
 ## Towards Papermill + Jupytext?
 
-With the `papermill_jupytext` package, we can open Jupytext scripts with the `txt://` address. Again, before we can open a script as a notebook with `papermill`, we need to inject a kernel information into it:
+With the `papermill_jupytext` package, we can open Jupytext scripts with the `txt://` address. A kernel pointing to the current Python environment is injected in the documents that have no kernel.
 
 ```bash
-jupytext script.py -o script_with_kernel_info.py --set-kernel -
-```
-
-```bash
-papermill txt://script_with_kernel_info.py executed_notebook.ipynb  -p integer 4 -p text 'updated text, v4'
+papermill txt://script.py executed_notebook.ipynb  -p integer 4 -p text 'updated text, v4'
 ```
 
 ```bash
