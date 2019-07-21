@@ -1,6 +1,7 @@
 import jupytext
 import nbformat
 
+
 class TextFileHandler:
 
     @classmethod

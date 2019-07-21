@@ -1,10 +1,8 @@
 language: python
 python:
   - "3.6"
-  - "pypy"
-  - "2.7"
-  - "3.4"
   - "3.5"
+  - "2.7"
 matrix:
   include:
     - python: 3.7
@@ -13,12 +11,22 @@ matrix:
 
 install:
 before_script:
+  # Install required packages
+  - pip install -r requirements.txt
+  - pip install -r requirements-dev.txt
+  - pip install .
+  - pip install ipykernel bash_kernel
   # stop the build if there are Python syntax errors or undefined names
   - flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
   # exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - flake8 . --count --exit-zero --max-complexity=10 --statistics
+  # all Python files should follow PEP8 (except some notebooks, see setup.cfg)
+  - flake8 papermill_jupytext tests
 script:
   - coverage run --source=. -m py.test
+  # Execute the README with a bash kernel
+  - python -m bash_kernel.install
+  - jupytext --to ipynb --execute README.md
 after_success:
   - coverage report -m
   - codecov
