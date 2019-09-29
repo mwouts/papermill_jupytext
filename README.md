@@ -5,11 +5,12 @@
 [![Language grade: Python](https://img.shields.io/badge/lgtm-A+-brightgreen.svg)](https://lgtm.com/projects/g/mwouts/papermill_jupytext/context:python)
 [![Pypi](https://img.shields.io/pypi/v/papermill_jupytext.svg)](https://pypi.python.org/pypi/papermill_jupytext)
 [![pyversions](https://img.shields.io/pypi/pyversions/papermill_jupytext.svg)](https://pypi.python.org/pypi/papermill_jupytext)
+[![CFM insights](https://img.shields.io/badge/CFM%20insights-Jupytext%20&%20Papermill-00ab6c.svg)](https://medium.com/capital-fund-management/automated-reports-with-jupyter-notebooks-using-jupytext-and-papermill-619e60c37330)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mwouts/papermill_jupytext/master?filepath=README.md)
 
 This is on-going research on how to run scripts as notebooks using Jupytext and Papermill. 
 
-The corresponding GitHub issues are [Jupytext #231](https://github.com/mwouts/jupytext/issues/231) and [Papermill #365](https://github.com/nteract/papermill/issues/365).
+The corresponding GitHub issues are [Jupytext #231](https://github.com/mwouts/jupytext/issues/231) and [Papermill #365](https://github.com/nteract/papermill/issues/365). See also our article on [Jupytext and Papermill](https://medium.com/capital-fund-management/automated-reports-with-jupyter-notebooks-using-jupytext-and-papermill-619e60c37330) in _CFM Insights_.
 
 Note that the below is a Bash Jupyter notebook that is [tested on our CI](https://github.com/mwouts/papermill_jupytext/blob/10dd863304614dd0c6328c859a077b52ba3c9822/.travis.yml#L29). If you wish, you can also open and run it interactively on [Binder](https://mybinder.org/v2/gh/mwouts/papermill_jupytext/master?filepath=README.md).
 
